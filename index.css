@@ -12,7 +12,9 @@ h1 {
   h3 { /* Accountant */
     font-family: 'Open Sans', sans-serif;
   }
-  
+  .projectName{
+    margin-top: 10px;
+  }
   .jobPosition span, 
   .projectName span {
     font-family: 'Source Sans Pro', sans-serif;
@@ -147,7 +149,7 @@ h1 {
   }
   
   .leftPanel {
-    width: 27%;
+    width: 28%;
     background-color: #484444;
     padding: 0.7cm;
     display: flex;
