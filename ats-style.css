@@ -1,206 +1,207 @@
-/* Simplified ATS-friendly resume styling */
+/* ATS-Friendly Resume Styling - Single Column Layout */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #333;
   margin: 0;
   padding: 0;
-  color: #000; /* Basic black for text */
-  line-height: 1.3; /* Slightly increased for readability */
-  background-color: #fff; /* Basic white background */
-  font-size: 10pt; /* Base font size */
+  background-color: #fff;
 }
 
 .resume {
-  max-width: 8.5in; /* Standard paper width */
-  margin: 0.5in auto; /* Centering with some margin */
-  padding: 0.5in;
-  background-color: #fff;
-  /* Removed border and box-shadow */
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 20px;
+  background-color: #fff; /* Ensure white background for PDF */
 }
 
-/* Header styling */
-header#contact_information {
-  text-align: center;
-  margin-bottom: 15px; /* Increased margin */
-  padding-bottom: 10px;
-  /* Removed border */
-}
-
+/* Header */
 .header-container {
-  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 h1 {
-  font-size: 20pt; /* Larger for name */
-  font-weight: bold;
-  margin: 0 0 5px 0; /* Added bottom margin */
-  padding: 0;
-  color: #000;
-  /* Removed text-transform and letter-spacing */
+  font-size: 22px;
+  margin: 0 0 3px 0;
+  color: #2c3e50;
 }
 
 .title {
-  font-size: 14pt; /* Slightly larger for title */
+  font-size: 16px;
   font-weight: bold;
-  margin: 5px 0;
-  color: #000;
-  /* Removed text-transform */
+  margin: 0 0 10px 0;
+  color: #3498db;
 }
 
 .contact-details {
-  margin-top: 8px;
-}
-
-.contact-info {
-  font-size: 10pt;
-  margin: 2px 0;
-  line-height: 1.3;
+  font-size: 13px;
 }
 
 .contact-label {
   font-weight: bold;
-  /* color: #000; (inherits) */
 }
 
-/* Section styling */
+.contact-info {
+  margin: 3px 0;
+}
+
+/* Section Styling */
 section {
-  margin-bottom: 12px; /* Increased margin */
-  page-break-inside: avoid;
+  margin-bottom: 15px;
+  width: 100%; /* Ensure full width for single column */
 }
 
 h2 {
-  font-size: 14pt; /* Larger for section titles */
-  font-weight: bold;
-  margin: 10px 0 5px 0; /* Adjusted margins */
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #3498db;
   padding-bottom: 3px;
-  color: #000;
-  /* Removed border-bottom and text-transform and letter-spacing */
+  margin-bottom: 8px;
+  color: #2c3e50;
 }
 
 h3 {
-  font-size: 12pt; /* Larger for sub-headings */
-  font-weight: bold;
-  margin: 8px 0 4px 0; /* Adjusted margins */
-  color: #000;
-  /* Removed text-transform */
+  font-size: 14px;
+  margin: 10px 0 3px 0;
+  color: #2c3e50;
 }
 
-/* Skills list styling */
-.skills-list {
-  margin: 4px 0 8px 0;
-  padding-left: 20px; /* Standard list indent */
-  /* Removed flex display for simplicity */
+/* Skills Summary */
+#skills_summary p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 13px;
 }
 
-.skills-list li {
-  font-size: 10pt;
-  margin-bottom: 3px;
-  line-height: 1.3;
+/* Skills categories */
+.skills-category {
+  margin-bottom: 8px;
 }
 
-/* Achievements list styling (if used) */
-.achievement-list {
-  margin: 4px 0 8px 0;
-  padding-left: 20px;
+.skills-category h3 {
+  font-size: 13px;
+  margin: 0 0 1px 0;
+  color: #2c3e50;
 }
 
-.achievement-list li {
-  font-size: 10pt;
-  margin-bottom: 3px;
-  line-height: 1.3;
+.skills-category p {
+  margin: 0 0 3px 0;
+  line-height: 1.4;
+  font-size: 13px;
 }
 
-/* Removed .two-columns styling */
-
-/* Content elements */
-p {
-  font-size: 10pt;
-  margin: 2px 0 5px 0;
-  line-height: 1.3;
-}
-
-ul {
-  margin: 4px 0 5px 0;
-  padding-left: 20px; /* Standard list indent */
-}
-
-li {
-  font-size: 10pt;
-  margin-bottom: 3px;
-  line-height: 1.3;
-  max-width: 7.5in; /* Ensure content stays within page */
-}
-
+/* Experience */
 .job {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 .company-dates {
   font-style: italic;
-  margin: 0 0 4px 0;
-  font-size: 10pt;
-  /* color: #000; (inherits) */
+  margin: 3px 0;
+  font-size: 13px;
 }
 
-/* Removed .project specific border and padding */
-.project {
-  margin-bottom: 6px;
-  padding: 0; /* Removed padding */
-  padding-left: 0; /* Removed padding */
-  /* border-left: none; Removed border */
+.job-context, .project-details {
+  margin: 3px 0 5px;
+  font-size: 13px;
 }
 
-
-strong {
-  font-weight: bold;
-  /* color: #000; (inherits) */
+/* Project dates */
+.project-dates {
+  font-style: italic;
+  margin: 3px 0;
+  font-size: 13px;
 }
 
-/* Specific section styling - mostly removed for simplicity or relies on general tags */
-#professional_summary p {
-  line-height: 1.4; /* Slightly more for summary paragraphs */
-  font-size: 10pt;
+/* Lists */
+ul {
+  padding-left: 18px;
+  margin: 6px 0;
 }
 
-#work_experience ul li {
-  padding-bottom: 3px;
+li {
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
-/* Removed #projects h3 color override */
-
-/* Removed #certifications p, #education p, #languages p, #interests p margin overrides */
-
-#additional_information {
-  /* font-style: italic; (optional, consider removing for ATS) */
-  border-top: 1px solid #ccc; /* Lighter border */
-  padding-top: 6px;
-  margin-top: 10px;
+/* Certifications & Education */
+.certs-edu {
+  margin-bottom: 5px;
 }
 
-#additional_information p {
-  line-height: 1.3;
+.certs, .edu {
+  margin-bottom: 5px;
 }
 
-/* Print settings */
+.certs p, .edu p {
+  font-size: 13px;
+  margin: 3px 0;
+  line-height: 1.4;
+}
+
+/* Additional information */
+.lang-info p {
+  font-size: 13px;
+  margin: 3px 0;
+  line-height: 1.4;
+}
+
+/* Print optimization */
 @media print {
   body {
-    background: white;
-    font-size: 10pt; /* Ensure print font size is consistent */
+    font-size: 11px;
+    background-color: #fff;
   }
   
   .resume {
-    width: 100%;
-    max-width: none;
-    padding: 0.25in; /* Adjusted padding for print */
-    margin: 0.2in; /* Standard print margin */
-    border: none;
+    padding: 8px;
+    margin: 0;
     box-shadow: none;
+    border: none;
+    width: 100%;
   }
   
-  @page {
-    margin: 0.25in; /* Consistent margin */
-    size: letter portrait;
+  h1 {
+    font-size: 18px;
   }
-}
-
-/* Removed * { box-sizing: border-box; } */ 
+  
+  h2 {
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+  }
+  
+  h3 {
+    font-size: 12px;
+    margin: 8px 0 2px 0;
+  }
+  
+  p, li {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  
+  ul {
+    margin: 4px 0;
+  }
+  
+  li {
+    margin-bottom: 3px;
+  }
+  
+  /* Ensure page breaks don't occur in the middle of sections */
+  section {
+    page-break-inside: avoid;
+  }
+  
+  .job, .project {
+    page-break-inside: avoid;
+  }
+  
+  /* Ensure proper margins for print */
+  @page {
+    margin: 0.4in;
+  }
+} 
